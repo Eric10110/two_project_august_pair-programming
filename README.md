@@ -1,57 +1,53 @@
 # two_project_august_pair-programming
-# 🔴 Pokédex Python (Tkinter + PokéAPI)
-Uma aplicação desktop simples e funcional de Pokédex construída em Python utilizando Tkinter para a interface gráfica e a PokéAPI para buscar dados em tempo real sobre qualquer Pokémon.
+# two_project_august_pair_programming-pokedex_henriqueaugusto.py
+📚 Documentação dos Projetos Python (Tkinter)
+Esta coleção reúne três aplicações desktop interativas desenvolvidas em Python com a biblioteca Tkinter, explorando desde a integração com APIs externas até a construção de simuladores e interfaces educativas.
 
-🚀 Funcionalidades
-🔍 Busca Dinâmica: Pesquise por nome ou ID do Pokémon.
+🐾 Pokédex Python (Tkinter + PokéAPI) 📌 Explicação do Projeto A Pokédex Python é uma aplicação desktop interativa que se conecta à PokéAPI para buscar e exibir dados detalhados sobre qualquer Pokémon em tempo real. O foco principal é demonstrar o consumo de APIs REST e a apresentação dinâmica de dados em uma interface gráfica.
+🚀 Funcionalidades 🔍 Busca Dinâmica: Pesquisa por nome (ex: pikachu) ou por ID (ex: 25).
 
-📊 Estatísticas Base: Exibição gráfica dos status (HP, Ataque, Defesa, etc.) com barras de progresso.
+📊 Estatísticas Base: Exibição gráfica e organizada do status do Pokémon (HP, Ataque, Defesa, etc.).
 
-📏 Informações Detalhadas: Visualização de tipo(s), altura, peso e habilidades.
+📏 Informações Detalhadas: Exibição de tipos, altura, peso e habilidades.
 
-🌐 Tradução Automática: Nomes de estatísticas traduzidos para o português.
+⚡ Atalho de Busca: Suporte à tecla Enter para facilitar a navegação.
 
-⚡ Atalho de Busca: Suporte à tecla Enter para buscar rapidamente.
+💰 Simulador Financeiro - Padrão B3 📌 Explicação do Projeto O Simulador Financeiro é uma aplicação bancária e de investimentos educacional. O projeto simula operações reais de conta corrente, compra de criptoativos e consulta de extrato financeiro. Ele utiliza o componente de abas (ttk.Notebook) para organizar visualmente as diferentes seções do aplicativo.
+🚀 Funcionalidades 💳 Conta Corrente: Realização de depósitos (Entrada) e saques (Saída) com validação contínua de valores e alertas para saldo insuficiente.
 
-🛠️ Tecnologias Utilizadas
-Python 3.x
+₿ Criptoativos (Bitcoin): Módulo de compra simulada de BTC com cotação fixa e cálculo de frações adquiridas.
 
-Tkinter (Interface Gráfica)
+📜 Extrato Dinâmico: Atualização automática de uma lista em tempo real com o histórico de todas as movimentações da sessão.
 
-Requests (Consumo de API HTTP)
+🎨 UI Customizada: Design estilizado em abas com uma paleta de cores inspirada no mercado financeiro.
 
-PokéAPI (Fonte dos dados sobre Pokémon)
+🏛️ História Financeira: Eufrásia Teixeira Leite 📌 Explicação do Projeto Este projeto é uma interface educativa e multimídia dedicada à história de Eufrásia Teixeira Leite, uma figura histórica brasileira pioneira no mercado de investimentos global. O programa combina requisições HTTP para carregar recursos visuais da web e uma linha do tempo interativa via botões acionáveis.
+🚀 Funcionalidades 🖼️ Carregamento de Imagem Web: Download e renderização direta da foto histórica a partir dos servidores da Wikimedia via requisição HTTP.
 
-📋 Pré-requisitos
-Antes de começar, garante que você tem o Python 3.x instalado na sua máquina.
+🛡️ Tratamento de Erros: Exibição de mensagem informativa e layout alternativo caso não haja conexão com a internet.
 
-Além disso, é necessário instalar a biblioteca requests:
+📅 Linha do Tempo Interativa: Botões organizados por datas marcantes que disparam janelas pop-up (messagebox) com detalhes e curiosidades.
 
-Bash
-pip install requests
-🔧 Como Executar o Projeto
-Clone o repositório:
+🛠️ Bibliotecas para Instalar Para garantir que todos os programas funcionem corretamente no seu ambiente Python, você precisará de bibliotecas padrão e externas.
 
-Bash
-git clone https://github.com/seu-usuario/pokedex-python.git
-Navegue até a pasta do projeto:
+📦 Bibliotecas Nativas (Já inclusas no Python) Estas bibliotecas vêm pré-instaladas por padrão no Python:
 
-Bash
-cd pokedex-python
-Execute o arquivo principal:
+tkinter: Módulo principal para criação da interface gráfica e janelas de alerta (messagebox).
 
-Bash
-python main.py
-(Substitua main.py pelo nome do arquivo contendo o seu código, caso seja diferente).
+io: Manipulação de dados de entrada e saída em memória (usado para ler os bytes da imagem).
 
-💡 Como Usar
-Abra a aplicação.
+📥 Bibliotecas Externas (Necessário Instalar) As bibliotecas a seguir devem ser instaladas via terminal/prompt de comando:
 
-Digite o nome (ex: pikachu, charizard) ou o ID (ex: 25, 6) do Pokémon na caixa de texto.
+requests: Responsável por fazer as requisições HTTP para a PokéAPI e para baixar a foto de Eufrásia Teixeira Leite.
 
-Clique no botão Buscar ou pressione Enter.
+pillow (PIL): Biblioteca de processamento de imagem necessária para abrir, redimensionar e exibir imagens web no Tkinter.
 
-Visualize todas as estatísticas e informações do Pokémon selecionado!
+💻 Comando para Instalação Abra o seu terminal ou prompt de comando e execute:
 
-📄 Licença
-Este projeto é livre para fins de estudo e aprendizado. Sinta-se à vontade para fazer forks e contribuições!
+Bash pip install requests pillow 📋 Pré-requisitos & Como Executar Certifique-se de ter o Python 3.x instalado em sua máquina.
+
+Instale as bibliotecas externas descritas no passo acima.
+
+Execute o arquivo do projeto desejado via terminal:
+
+Bash python seu_arquivo.py 📄 Licença Todos os projetos contidos neste repositório são livres para fins de estudo, aprendizado e modificação. Sinta-se à vontade para praticar, criar forks, aprimorar a interface ou adaptar o código para seus próprios exercícios!
