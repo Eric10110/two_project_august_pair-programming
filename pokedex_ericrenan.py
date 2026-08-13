@@ -26,7 +26,7 @@ class PokedexApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Pokédex Python")
-        self.root.geometry("420x640")
+        self.root.geometry("480x800")
         self.root.resizable(False, False)
         self.root.configure(bg="#DC0A2D")
 
@@ -86,6 +86,17 @@ class PokedexApp:
             command=self.buscar_pokemon,
         )
         btn_buscar.pack(side="left", padx=5)
+        
+        btn_limpar = tk.Button(
+        self.frame_busca,
+        text="❌",
+        font=("Arial", 10, "bold"),
+        bg="#E0E0E0",
+        fg="#333333",
+        relief="flat",
+        command=self.limpar_busca,
+)
+        btn_limpar.pack(side="left", padx=2)
 
       
         self.card = tk.Frame(
@@ -185,7 +196,7 @@ class PokedexApp:
 
         
         for row in self.frame_stats.winfo_children():
-            row.configure(bg=cor_card)
+            row.configure(bg=cor_card) # type: ignore
             for child in row.winfo_children():
                 if isinstance(child, tk.Label):
                     child.configure(bg=cor_card, fg=cor_texto)
@@ -218,6 +229,9 @@ class PokedexApp:
                 "Erro de Conexão",
                 "Não foi possível conectar à PokéAPI. Verifique sua internet.",
             )
+    def limpar_busca(self):
+             self.entry_busca.delete(0, tk.END)  
+             self.entry_busca.focus() 
 
     def atualizar_interface(self, dados):
         poke_id = dados["id"]
